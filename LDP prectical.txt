@@ -1,0 +1,366 @@
+ 
+ * If Statement
+		#include <stdio.h>
+		int main() {
+		  
+		  int a=1;
+		  if(a<15){
+			printf(" hello! ");
+		  }
+		  return 0;
+		}
+  
+  * If else statement
+		#include <stdio.h>
+		int main() {
+		  
+		  int a=1;
+		  if(a<15){
+			printf(" Entered Number is Less Than 15  ");
+		  }else{
+			printf("Entered Number is Not Less Than 15 ");
+		  }
+		  return 0;
+		}
+	
+ * Nested if statement
+
+		#include <stdio.h>
+		int main() {
+		  
+		  int a=1;
+		  if(a<15){
+			  if(a<10){
+				printf(" Entered Number is Less Than 10  ");
+			  }
+		  }
+		  else{
+		     printf("Entered Number is Not Less Than 15 ");
+		   }
+		  return 0;
+		}
+
+ * Switch statement
+		#include <stdio.h>
+		int main() {
+		  
+		  int a=5;
+		  switch(a){
+			case 1:
+				printf("choice is 1");
+				break;
+			case 2:
+				printf("choice is 2");
+				break;
+			case 3:
+				printf("choice is 3");
+				break;
+			case 4:
+				printf("choice is 4");
+				break;
+			default:
+				printf("choice other 1,2,3 and 4");
+				break;
+		  }
+		  return 0;
+		}
+
+	<= LOOPs =>
+	
+	1. While Loop
+			#include <stdio.h>
+			int main() {
+			  
+			  int i=1;
+			  while(i<5){
+				  printf("%d\n",i);
+				  i++;
+			  }
+			  return 0;
+			}
+			
+	2. Do/While Loop
+			#include <stdio.h>
+			int main() {
+			  
+			  int i=5;
+			  do{
+				  printf("%d\n",i);
+				  i++;
+			  }while(i<5);
+			  return 0;
+			}
+	
+	3. For Loop
+			#include <stdio.h>
+			int main() {
+			  
+			  int i;
+			  for(i=1;i<11;++i){
+				  printf("%d\n",i);
+			  }
+			  return 0;
+			}
+			
+	4. Nested Loop
+			#include<stdio.h>
+			int main() {
+				
+				int i,a=5;
+				for (i=0; i<5;i++){
+					if(a==5){
+						printf("a value is 5.");
+					}
+					
+				}
+				return 0;
+				}
+			
+	<= Array =>
+		
+	* How to Declare and Print Array.
+				#include<stdio.h>
+				int main() {
+					int arr[]={12,54,68,87};
+					printf("%d ",arr[0]);
+					printf("%d ",arr[1]);
+					printf("%d ",arr[2]);
+					printf("%d ",arr[3]);
+					printf("%d ",arr);
+					return 0;
+					}
+	* String in Array
+				#include<stdio.h>
+				int main() {
+					char gre[]="hello world!";
+					printf("%s",gre);
+					printf("%s",gre[0]);
+					printf("%s",gre[2]);
+				return 0;
+				}
+	* One Dimansional Array
+
+		#include<stdio.h>
+		int main() {
+			int arr[3];
+			int i;
+			for (i=0;i<3;i++){
+				printf("\n Enter arr[%d] = ",i+1);
+				scanf("%d",&arr[i]);
+			}
+			for (i=0;i<3;i++){
+				printf("\narr[%d] = %d",i ,arr[i]);
+			}
+		return 0;
+		}
+		
+	* Two Dimansional Array	
+		#include<stdio.h>
+		int main() {
+			int arr[3][2];
+			int i,j;
+			for (i=0;i<3;i++){
+				for (j=0;j<2;j++){
+					printf(" Enter arr[%d][%d] = ",i,j);
+					scanf("%d",&arr[i][j]);
+				}
+			}
+			for (i=0;i<3;i++){
+				for (j=0;j<2;j++){
+					printf("arr[%d][%d] = %d\n",i,j ,arr[i][j]);
+				}
+			}
+		return 0;
+		}
+		
+	* Multi Dimansional	Array
+			#include<stdio.h>
+			int main() {
+				int arr[2][2][2]={
+					{{1,2},{2,3}},
+					{{1,2},{2,3}}
+				};
+				 int i,j,k;
+				 for (i=0;i<2;i++){
+					 for (j=0;j<2;j++){
+						 for (k=0;k<2;k++){
+							 printf(" Enter arr[%d][%d][%d] = ",i,j,k);
+							 scanf("%d",&arr[i][j][k]);
+				}}}
+				 for (i=0;i<2;i++){
+					 for (j=0;j<2;j++){
+					 for (k=0;k<2;k++){
+							 printf("arr[%d][%d][%d] = %d\n",i,j,k ,arr[i][j][k]);
+				}}}
+			return 0;
+			}
+			
+	=> Postfiex and Prefiex		
+			#include<stdio.h>
+			int main() {
+					  
+				int i=5,j, I=5,J;
+				j=i++;                  //Postfiex
+				printf("i = %d , j = %d ",i,j);
+				printf("\n---------------------------------------------\n");
+				J=++I;                  //Prefiex
+				printf("I = %d , J = %d ",I,J);
+				
+				return 0;
+			}		
+			
+	* Program to cheak even or odd..
+			#include<stdio.h>
+			int main() {
+				int num;
+				printf("Enter an integer => ");
+				scanf("%d",&num);
+				if(num%2==0){
+					printf("Entered Number is Even.");
+				}else{
+					printf("Entered Number is Odd.");
+				}
+			return 0;
+			}
+	* Find Largest Number among three..
+			#include<stdio.h>
+			int main() {
+				int a,b,c;
+				printf("Enter Three Number ");
+				scanf("%d%d%d",&a,&b,&c);
+				if(a>b&&a>c){
+				printf("A is Largest Number ");
+				}
+				else if(b>a&&b>c){
+					printf("B is Largest Number ");
+				}
+				else if(c>a&&c>b){
+					printf("C is Largest Number ");
+				}
+				else{
+					printf("a,b and c is equal ");
+				}
+			return 0;
+			}
+			
+	* fionacci seriest..
+			#include<stdio.h>
+			int main() {
+				int n1=0,n2=1,n3,number,i;
+				printf("Enter the numbers of element ");
+				scanf("%d",&number);
+				printf("%d %d ",n1,n2);
+				for(i=0;i<number;++i){
+					n3=n1+n2;
+					printf("%d ",n3);
+					n1=n2;
+					n2=n3;
+				}
+			return 0;
+			}
+	* Display the Sum of first 10 Number..
+			#include<stdio.h>
+			int main() {
+				int sum=0,i;
+				for(i=1;i<10;i++){
+					sum=sum+i;
+					printf("%d ",i);
+				}
+				printf("\nthe sum is %d",sum);
+			return 0;
+			}
+			
+	* marksheet 
+			#include<stdio.h>
+			int main() {
+				int m1,m2,m3,total;
+				float per;
+				printf("Enter math mark => ");
+				scanf("%d",&m1);
+				printf("Enter scince mark => ");
+				scanf("%d",&m2);
+				printf("Enter english mark => ");
+				scanf("%d",&m3);
+				total=m1+m2+m3;
+				per=total/3;
+				if (per>=60&&per<=100){
+					printf("you are 1st class");
+				}
+				else if (per>=50&&per<60){
+					printf("you are 2nd class");
+				}
+				else if (per>=40&&per<50){
+					printf("you are 3rd class");
+				}
+				else{
+					printf("you are fail");
+				}
+				
+			return 0;
+			}
+	
+			
+	* Number of Vowels in a String.
+		#include <stdio.h>
+		int main() {
+		  char str[100]={"hello"};
+		  int i , count=0;
+		  printf("enter rendom word => ");
+		  scanf("%s",&str);
+		  
+		  for (i=0;str[i]!='\0';i++){
+				  if(str[i]=='a' ||
+					str[i]=='e' ||
+					str[i]=='i' ||
+					str[i]=='o' ||
+					str[i]=='u'){
+					count ++;
+				}
+		  }
+		  printf(" vowel count => %d", count);
+		  return 0;
+		}
+	
+	* Factorial
+		#include<stdio.h>
+		int main() {
+			int i, fact=1 , number;
+			printf("Enter a number");
+			scanf("%d",&number);
+			for (i=1;i<=number;i++){
+				fact=fact+1;
+			}
+			printf("factnal of %d is %d .",number,fact);
+		return 0;
+		}
+		
+	* Piramite
+		#include<stdio.h>
+		int main() {
+			int i,j,rows;
+			printf("Enter the Number of Rows => ");
+			scanf("%d",&rows);
+			for (i=1;i<=rows;i++){
+				for (j=1;j<=i;j++){
+					printf("*");
+				}
+				printf("\n");
+			}
+		return 0;
+		}	
+		
+	* Number Piramite  	
+		#include<stdio.h>
+		int main() {
+			int i,j,rows;
+			printf("Enter the Number of Rows => ");
+			scanf("%d",&rows);
+			for (i=1;i<=rows;i++){
+				for (j=1;j<=i;j++){
+					printf("%d ",j);
+				}
+				printf("\n");
+			}
+		return 0;
+		}	
+		

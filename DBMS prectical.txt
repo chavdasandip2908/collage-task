@@ -1,0 +1,78 @@
+
+ * Truncate and Drop Table
+	truncate table student2;
+	drop table student2; 
+	
+ * Rename a Table Name	
+	alter table <table name> rename to <new table name>;
+	
+ * rename acolumn of table 
+	alter table <table name> rename column <old column name> to < new column name>;
+	
+ * add new column 
+	alter table <table name> add <column_name> datatype;
+
+ * drop column in table 
+	alter table <table name> drop column <column name> ;
+ 
+ * modify column
+	alter table <table namer> modify <column_name> datatype ;
+	
+ * Count()	
+	select count( column_name) from <table name> where condition ;
+	ex :- select count(p_name) from product ;
+
+ * Avg()
+	select avg( column_name) from <table name> where condition ;
+	ex :- select avg(p_name) from product ;
+
+ * Sum()
+ 	select sum( column_name) from <table name> where condition ;
+	ex :- select sum(p_name) from product ;
+
+ * Update  
+	update <table name> set <column name>='value' where codition;
+ 
+ * delete rows
+	delete from <table name> where condition ;
+
+ * Top
+	select top 3 * from <table name>;
+	
+ * Min()	
+	select min(column name) from <tablr name> ;
+   
+ * Max()  
+	select max(column name) from <tablr name> ;
+
+ * Like 
+	select * from <table name> where <column name> like 'a%';
+	
+ * In()	
+	select * from <table name> where <column name> in(value1,value2.....);
+	
+ * Between 	
+	select * from <table name> where <column name> between value1 and value2;
+	
+ <= join =>
+ 
+	* Inner join
+		syntax :- select coulumns from table1 inner join table2 on table1.column=table2.column;
+		ex :- select order.o_id ,customer.c_name from order inner join customer on order.c_id=customer.c_id;
+	* Right join
+		syntax :- select coulumns from table1 right join table2 on table1.column=table2.column;
+		ex :- select order.o_id ,customer.c_name from order right join customer on order.c_id=customer.c_id;
+	* Left join
+		syntax :- select coulumns from table1 left join table2 on table1.column=table2.column;
+		ex :- select order.o_id ,customer.c_name from order left join customer on order.c_id=customer.c_id;
+	* Fill Outer join
+		syntax :- select coulumns from table1 full outer join table2 on table1.column=table2.column;
+		ex :- select order.o_id ,customer.c_name from full outer inner join customer on order.c_id=customer.c_id;
+
+
+
+
+
+
+
+
