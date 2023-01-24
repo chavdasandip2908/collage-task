@@ -1,0 +1,51 @@
+create table book (book_id number(3) primary key ,
+                   title varchar(20),
+                   isbn number(20),
+                   price number(5),
+                   author_id number(3) references author(author_id),
+                   publisher_id number(3) references publisher(publisher_id)
+);
+create table author (author_id number(3) primary key ,
+                   aname varchar(15),
+                   experience number(3),
+                   address varchar(20),
+                   mobile number(10)
+);
+create table publisher (publisher_id number(3) primary key ,
+                   pname varchar(15),
+                   address varchar(20),
+                   mobile number(10)
+);
+
+
+insert into book values(101,'ldp', 20201, 20, 31, 41);
+insert into book values(102,'dbms', 20202, 25, 32, 42);
+insert into book values(103,'mcp', 20203, 15, 33, 43);
+select * from book;
+
+insert into author values(31,'harish',18,'surat',1234567890);
+insert into author values(32,'harish',25,'rajkot',1234567890);
+insert into author values(33,'harish',22,'botad',1234567890);
+select * from author;
+
+
+insert into publisher values(41,'syam','paliyad',1234567890);
+insert into publisher values(42,'mayur','khas',1234567890);
+insert into publisher values(43,'tushar','jalela',1234567890);
+select * from publisher;
+
+
+1. select  title, isbn ,price from book where book_id > 5;
+
+2. select * from author where experience>20;
+
+3. select * from author 
+	inner join book on 
+	author.author_id= book.author_id 
+	where book.title='dbms';
+	
+4. select book.title, author.aname ,publisher.publisher_id from 
+	book inner join author 
+	on book.author_id=author.author_id 
+	inner join publisher on 
+	book.publisher_id=publisher.publisher_id ;

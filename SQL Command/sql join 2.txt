@@ -1,0 +1,3 @@
+<--join-->
+->type of join 
+ 	1.

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url('images/pexels-anand-dandekar-1532771.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-position: 10px -10px 0px 0px; */
+        }
+        #menu{
+            height: 35px;
+            margin: 30px 0 20px 20px;
+            width: 35px;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .bar{
+            height: 5px;
+            width: 100%;
+            background-color: #fff;
+            display: block;
+            border-radius: 5px;
+            transition: 0.3 ease;
+            
+        }
+        #bar1{
+            transform: translateY(-4px);
+        }
+
+        #bar3{
+            transform: translateY(4px);
+        }
+        .nav{
+            color: #fff;
+            
+        }
+        .nav li a{
+            
+            text-decoration: none;
+            color: white;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+        }
+        .nav li a:hover{
+            border: 1px solid #fff;
+            border-radius: 2px;
+        }
+        .nav li{
+            list-style: none;
+            padding: 16px 0;
+
+        }
+        .nav{
+            padding: 0;
+            margin: 0 20px;
+            transition: 1s ease;
+            display: none;
+        }
+
+        .icon .nav{
+            background-color: #fff;
+        }
+
+        .icon #bar1{
+            transform: translateY(4px) rotate(-45deg);
+        }
+        .icon #bar3{
+            transform: translateY(-6px) rotate(45deg);
+        }
+        .icon #bar2{
+            opacity: 0;
+        }
+        .change{
+            background-color: #2b3772;
+            height: 100vh;
+            margin: 0;
+            position: absolute;
+            font-size: 30px;
+            top: 0;
+            z-index: -100;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        @media (max-width:1000px) {
+            body{
+                background-size: 226%;
+                background-position: -340px 0px; 
+            }       
+           
+            .change{
+                width: 40%;
+            }
+        }
+        @media (max-width:500px) {
+            body{
+                background-size: 340%;
+                background-position: -350px 0px; 
+               
+            }
+            .change{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <div id="menu" onclick="onClickMenu()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        
+    </div>
+    <ul class="nav" id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contect</a></li>
+    </ul>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vitae corporis voluptas maxime sequi tenetur maiores animi molestias reprehenderit placeat. Cumque mollitia vero voluptate error, quia porro omnis necessitatibus nemo.
+        </p>
+    </section>
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("icon")
+            document.getElementById("nav").classList.toggle("change")
+            
+        }
+    </script>
+</body>
+</html>

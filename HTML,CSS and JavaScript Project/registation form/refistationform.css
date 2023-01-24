@@ -1,0 +1,35 @@
+#form{
+    text-align: center;
+}
+
+.fint{
+   background-color: rgba(65, 77, 72, 0.742);
+   border-radius: 7px;
+   width: 93%;
+   height: 22px;
+}
+#regi{
+    /* align-content: center; */
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    display:flex ;
+
+}
+#fsub{
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgb(93, 93, 230);
+    color: white;
+    height: 25px;
+}
+#formtag{
+    background-color: rgba(58, 100, 140, 0.806);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 7px;
+}
+.alltext{
+    margin: 5px;
+}

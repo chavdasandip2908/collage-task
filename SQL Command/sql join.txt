@@ -1,0 +1,31 @@
+create table order_1526(oder_id number(15),c_id number(15),o_date varchar(10));
+
+insert into order_1526 values(1001,21001,10-10-2022);
+insert into order_1526 values(1002,21002,10-10-2022);
+insert into order_1526 values(1003,21003,11-10-2022);
+insert into order_1526 values(1004,21004,11-10-2022);
+insert into order_1526 values(1005,21005,12-10-2022);
+
+create table customer_1526(c_id number(15),c_name varchar(15),c_address varchar(20));
+
+insert into customer_1526 values(21001,'pradip','botad');
+insert into customer_1526 values(21002,'sandip','turkha');
+insert into customer_1526 values(21003,'jaydip','jalela');
+insert into customer_1526 values(21004,'mayur','botad');
+insert into customer_1526 values(21005,'bhargav','bhavnagar');
+
+
+select * from order_1526 ;
+select * from customer_1526 ;
+
+<--INNNER  JOIN-->
+	SELECT order_1526.oder_id,customer_1526.c_name 
+	FROM order_1526 
+	INNER JOIN customer_1526 
+	ON order_1526.c_id= customer_1526.c_id;
+
+<--LEFT JOIN-->
+	SELECT customer_1526.c_name , order_1526.c_id
+	FROM customer_1526 
+	LEFT JOIN order_1526   
+	ON customer_1526.c_id = order_1526.c_id ;

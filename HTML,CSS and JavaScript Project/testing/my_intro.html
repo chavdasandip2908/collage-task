@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;400;500;700&family=Rubik&display=swap');
+
+        /* font-family: 'Anton', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Rubik', sans-serif; */
+
+        * {
+            margin: 0;
+            padding: 0;
+    
+        }
+        body{
+            transition: all 1S;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 15vw;
+            background-color: red;
+            height: 100vh;
+        }
+
+        .sidebar nav {
+            padding: 60px 60px 60px 40px ;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 20px;
+            font-weight: 100;
+            padding: 10px 0px;
+            transition: all 1s ;
+            border-bottom: 1.5px solid transparent;
+            text-align: center;
+        }
+
+        .sidebar nav li:hover {
+            border-bottom: 1.5px solid rgb(24, 23, 23);
+            cursor: pointer;
+         
+        
+        }
+
+        .sidebar nav li a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .main {
+            width: 85vw;
+            background-color: yellow;
+        }
+
+        .infocontainer {
+            background-color: gray;
+            height: 75vh;
+            width: 75vw;
+            margin: 70px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .devpic img {
+            height: 75vh;
+        }
+
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hello {
+            font-family: 'Oswald', sans-serif;
+            font-size:35px;
+        }
+        
+        .name {
+            font-family: 'Anton', sans-serif;
+            font-size: 40px;
+        }
+        
+        .about {
+            font-family: 'Rubik', sans-serif;
+            font-size:25px;
+        }
+
+        .btn button{
+            background-color: rgb(66, 66, 152);
+            color: white;
+            border-radius: 10px 20px;
+            margin: 10px 2px;
+            padding: 10px;
+        }
+        .btn button:hover{
+            color: rgb(66, 66, 152);
+            background-color: white;
+            transition: all 1S;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <nav>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="my_intro.html">My Intro</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contect.html">Contect Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="hello">I am </div>
+                    <div class="name">Sandip Chavda</div>
+                    <div class="about">Developer , Danser , Singer</div>
+                    <div class="btn">
+                        <button>Downloade CV</button>
+                        <button>Contec Me</button>
+                    </div>
+                </div>
+                <div class="devpic"><img src="IMG20221026174602-removebg-preview1.png" alt="sandip image"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

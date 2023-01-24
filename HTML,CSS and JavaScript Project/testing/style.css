@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;400;500;700&family=Rubik&display=swap');
+
+        /* font-family: 'Anton', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Rubik', sans-serif; */
+       
+
+        :root{
+            --main-background:  #B0A8B9;
+            /* --ineare-background: background-image:; */
+            --nav-background:  #4B4453 ;
+            --nav-color:  #FBEAFF ;
+            --main-color:  #FBEAFF ;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+    
+        }
+        body{
+            transition: all 1S;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 15vw;
+            background-color: var(--nav-background) ;
+            height: 100vh;
+        }
+
+        .sidebar nav {
+            padding: 60px 60px 60px 40px ;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 20px;
+            font-weight: 100;
+            padding: 10px 0px;
+            transition: all 1s ;
+            border-bottom: 1.5px solid transparent;
+            text-align: center;
+        }
+
+        .sidebar nav li:hover {
+            border-bottom: 1.5px solid rgb(24, 23, 23);
+            cursor: pointer;
+         
+        
+        }
+
+        .sidebar nav li a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .main {
+            width: 85vw;
+            background-color: var(--main-background);
+        }
+
+        .infocontainer {
+            /* background-color: gray; */
+            background-image: linear-gradient( #B0A8B9 ,#888091);
+            height: 75vh;
+            width: 75vw;
+            margin: 70px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .devpic img {
+            height: 75vh;
+        }
+
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hello {
+            font-family: 'Oswald', sans-serif;
+            font-size:35px;
+        }
+        
+        .name {
+            font-family: 'Anton', sans-serif;
+            font-size: 40px;
+        }
+        
+        .about {
+            font-family: 'Rubik', sans-serif;
+            font-size:25px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: rgb(66, 66, 152);
+            color: white;
+            border-radius: 10px 20px;
+            margin: 10px 2px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .more{
+            margin: 35px 2px;
+            font-family: 'Rubik', sans-serif;
+        
+        }
+        .btn_sm{
+            padding:3px 12px ;
+        }
+        .btn:hover{
+            color: rgb(66, 66, 152);
+            background-color: white;
+            transition: all 1S;
+            cursor: pointer;
+        }
+
+        /* contect page style */
+
+
+        /* font-family: 'Anton', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Rubik', sans-serif; */
+
+        .contectform{            
+            padding: 0 70px ;
+        }
+
+        .contectform h1{
+          
+            font-family: 'Oswald', sans-serif; 
+            margin: 50px 0 40px 0  ;
+        }
+        form .form-controal{
+            border: none;
+            border-bottom: 2px solid black;
+            border-radius: 3px;
+            background-color: #9672c6;
+            padding: 3px 2px;
+            width: 25vw;
+  
+        }
+        .form-label,
+        .emailhelp{
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+        }
+        .emailhelp{
+            margin-top: 3px;
+        }
+
+        .sm-font{
+            font-size: 15px;
+        }
+
+        .inputset{
+            margin-bottom: 15px;
+        }

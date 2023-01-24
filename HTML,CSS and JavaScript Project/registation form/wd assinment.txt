@@ -1,0 +1,5 @@
+ => ANSWER THE FOLLOWING QUESTIONS.
+	1. HTML is case sensitive. TRUE/FALSE
+	-> HTML is not a case sensitive language
+	
+	2.
