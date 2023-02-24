@@ -1,0 +1,17 @@
+.main{
+		
+    padding: 2px 8px;
+    border-radius: 10px 5px;
+    background-color: rgb(31 166 249 / 61%);
+    color: white;
+    
+}
+
+body{
+    background-color: lightblue;
+}
+h1{
+    color:navy;
+    margin-left: 20px;
+}
+

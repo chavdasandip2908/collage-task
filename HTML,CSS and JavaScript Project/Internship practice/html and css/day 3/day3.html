@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day2</title>
+	<!-- Extranal CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Internal CSS -->
+	<style>
+		/* Here "*" is Universal Selecter */
+		*{
+			border-left: 1px solid black;
+			padding-left: 1px;
+		}
+
+		/* Here "p" Is Element Selecter */
+		p{
+			color: indianred;
+		}
+
+		/* Here "#heading" Is Id Selecter */
+		#heading{
+			color:red;
+			text-align: center;
+		}
+
+		/* Here ".info" Is Class Selecter */
+		.info{
+			color:rgba(70, 116, 83, 0.863);
+		}
+
+		/* here .info,#heading Grouping Selectert */
+		.info,#heading{
+			background-color: rgba(100, 190, 190, 0.514);
+		}
+		.bor{
+			border: 1px solid black;
+			background-color: rgba(0, 0, 0, 0.411);
+			margin: 5px 0;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>This is Heading</h1>
+	<p>This Is Paragraph</p>
+	<!-- Inline CSS -->
+	<div height="1000" width="200" style="color:blue" >This is Div Tag</div>
+	<!-- Id Selecter -->
+	<h1 id="heading">Hello World!</h1>
+	<!-- Class Selecter -->
+	<p class="info">I am Manav Jadav</p>
+
+	<div class="bor">
+		This is Div Tag.
+	</div>
+	<span class="bor">
+		This is Span Tag
+	</span>
+
+	<!-- <style contenteditable style="display: block; white-space: pre;">
+		html{
+			color:yellowgreen ;
+		}
+		
+	</style>
+	<button class="main">
+		input
+	</button> -->
+</body>
+</html>
